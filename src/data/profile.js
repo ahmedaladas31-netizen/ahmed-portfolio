@@ -32,9 +32,10 @@ export const profile = {
 
   // روابطك — ضع روابطك الحقيقية (تظهر في الفوتر وفي schema sameAs)
   social: [
-    { label: 'GitHub', href: 'https://github.com/' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-    { label: 'Instagram', href: 'https://www.instagram.com/' },
+    { label: 'GitHub', href: 'https://github.com/ahmedaladas31-netizen' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ahmed-aladas-5aa772367' },
+    { label: 'Instagram', href: 'https://www.instagram.com/ahmad_aladas2003' },
+    { label: 'Facebook', href: 'https://www.facebook.com/share/17q63ikfqX/' },
   ],
 
   // قائمة مسطّحة تُستخدم في الشريط المتحرّك و schema (knowsAbout)
