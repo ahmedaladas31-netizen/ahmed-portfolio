@@ -48,6 +48,14 @@ export const projects = [
     repoUrl: '#',
     related: ['smash-chef-app', 'wa-assistant'],
 
+    // لقطات حقيقية من المشروع — تُعرض في معرض صفحة المشروع مع نص بديل (alt) وصفي
+    images: [
+      { src: '/projects/smash-lab-whatsapp-start.jpg', alt: 'محادثة واتساب مع بوت سماش لاب - اختيار الوجبة والجرام' },
+      { src: '/projects/smash-lab-whatsapp-confirm.jpg', alt: 'تأكيد طلب بوت سماش لاب مع تفاصيل التوصيل' },
+      { src: '/projects/smash-lab-telegram-notification.jpg', alt: 'إشعار تيليجرام بطلب جديد من بوت سماش لاب' },
+      { src: '/projects/smash-lab-dashboard.jpg', alt: 'داشبورد إدارة طلبات مطعم سماش لاب' },
+    ],
+
     // حالة دراسية صادقة — بناء نظام يحوّل واتساب المطعم إلى كاشير ذكي
     caseStudy: {
       title: 'حالة دراسية: بناء نظام يحوّل واتساب المطعم إلى كاشير ذكي — من الفكرة إلى نموذج شغّال',
@@ -145,6 +153,14 @@ export const projects = [
     liveUrl: '#',
     repoUrl: '#',
     related: ['smash-lab', 'smash-chef-app'],
+
+    // لقطات حقيقية من المتجر — تُعرض في معرض صفحة المشروع مع نص بديل (alt) وصفي
+    images: [
+      { src: '/projects/barcelona-home.jpg', alt: 'الصفحة الرئيسية لمتجر برشلونة BAC لإكسسوارات الحمامات' },
+      { src: '/projects/barcelona-designs.jpg', alt: 'تصاميم حمامات برشلونة - رمادي وأسود وذهبي وروز' },
+      { src: '/projects/barcelona-faucets.jpg', alt: 'بطاريات مغاسل من متجر برشلونة BAC مع الأسعار' },
+      { src: '/projects/barcelona-sinks.jpg', alt: 'مغاسل وخزائن حمامات من متجر برشلونة BAC' },
+    ],
   },
 
   {
@@ -183,6 +199,13 @@ export const projects = [
     liveUrl: '#',
     repoUrl: '#',
     related: ['smash-lab', 'barcelona-bac'],
+
+    // لقطات حقيقية من التطبيق — تُعرض في معرض صفحة المشروع مع نص بديل (alt) وصفي
+    images: [
+      { src: '/projects/smash-chef-home.jpg', alt: 'تطبيق سماش منيو - قائمة الأطباق والتصنيفات للمطبخ' },
+      { src: '/projects/smash-chef-recipe.jpg', alt: 'تفاصيل وصفة اكسترا تشيز كرسبي مع المكونات' },
+      { src: '/projects/smash-chef-equipment.jpg', alt: 'دليل تشغيل الغريل وإرشادات السلامة للشيفات' },
+    ],
   },
 
   {
@@ -220,6 +243,12 @@ export const projects = [
     liveUrl: '#',
     repoUrl: '#',
     related: ['smash-lab', 'barcelona-bac'],
+
+    // لقطات حقيقية من البوت — تُعرض في معرض صفحة المشروع مع نص بديل (alt) وصفي
+    images: [
+      { src: '/projects/wa-assistant-services.jpg', alt: 'بوت واتساب الشخصي يشرح خدمات التصميم والأتمتة' },
+      { src: '/projects/wa-assistant-lead.jpg', alt: 'بوت واتساب الشخصي يستقبل طلباً ويحوله لمتابعة بشرية' },
+    ],
   },
 ]
 

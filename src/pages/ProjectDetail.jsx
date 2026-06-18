@@ -4,7 +4,6 @@ import Section from '../components/Section'
 import Button from '../components/Button'
 import Badge from '../components/Badge'
 import Reveal from '../components/Reveal'
-import ProjectThumb from '../components/ProjectThumb'
 import ProjectCard from '../components/ProjectCard'
 import NotFound from './NotFound'
 import { profile } from '../data/profile'
@@ -130,13 +129,6 @@ export default function ProjectDetail() {
             </dl>
           </aside>
         </div>
-
-        {/* صورة المشروع */}
-        <Reveal className="mt-10">
-          <div className="card-brutal overflow-hidden">
-            <ProjectThumb project={project} className="aspect-[16/7]" />
-          </div>
-        </Reveal>
       </Section>
 
       {/* تفاصيل المشروع */}
@@ -200,6 +192,35 @@ export default function ProjectDetail() {
           </aside>
         </div>
       </Section>
+
+      {/* لقطات من المشروع — معرض الصور الحقيقية مع نص بديل (alt) وصفي */}
+      {project.images?.length > 0 && (
+        <Section className="!pt-0">
+          <Reveal>
+            <span className="font-mono text-sm uppercase tracking-widest text-ink/60">
+              /// معرض
+            </span>
+            <h2 className="section-title mt-2">لقطات من المشروع 📸</h2>
+          </Reveal>
+          <div className="mt-9 grid gap-7 sm:grid-cols-2">
+            {project.images.map((img, i) => (
+              <Reveal key={img.src} delay={i * 90}>
+                <figure className="card-brutal overflow-hidden bg-cream">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="mx-auto max-h-[600px] w-full border-b-[3px] border-ink bg-ink/5 object-contain"
+                  />
+                  <figcaption className="p-4 font-mono text-xs leading-relaxed text-ink/70">
+                    {img.alt}
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* حالة دراسية مفصّلة (اختيارية) */}
       {project.caseStudy && (
