@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # خريطة الموقع
-Sitemap: https://www.ahmed-aladas.com/sitemap.xml
+Sitemap: https://ahmed-portfolio-gules.vercel.app/sitemap.xml

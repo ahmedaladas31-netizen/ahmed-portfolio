@@ -21,7 +21,7 @@ export const profile = {
     'قصتي بسيطة: بلّشت أتعلّم HTML، وخطوة بخطوة وصلت لبناء مواقع متطورة وأنظمة أتمتة مدعومة بالذكاء الاصطناعي — كل مهارة تعلّمتها كان وراها مشروع حقيقي نفّذته بإيدي. أنا لسا بتعلّم وما بدّعي إني محترف، بس اللي بشتغل عليه بطلّعه شغّال على أرض الواقع.',
 
   // ضع نطاقك الحقيقي هنا قبل النشر — يُستخدم في canonical و sitemap و schema
-  siteUrl: 'https://www.ahmed-aladas.com',
+  siteUrl: 'https://ahmed-portfolio-gules.vercel.app',
 
   email: 'ahmedaladas4@gmail.com',
   phone: '+970 59 766 6336',

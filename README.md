@@ -53,7 +53,7 @@ portfolio/
 
 1. **`src/data/profile.js`** — اسمك، نبذتك، بريدك، روابطك، مهاراتك.
 2. **`src/data/projects.js`** — مشاريعك (الوصف، الروابط، النتائج، التقنيات).
-3. **النطاق (Domain)** — استبدل `https://www.ahmed-aladas.com` بنطاقك الحقيقي في:
+3. **النطاق (Domain)** — استبدل `https://ahmed-portfolio-gules.vercel.app` بنطاقك الحقيقي في:
    - `src/data/profile.js` (الحقل `siteUrl`)
    - `index.html` (روابط canonical/og و JSON-LD)
    - `public/robots.txt` و `public/sitemap.xml`
