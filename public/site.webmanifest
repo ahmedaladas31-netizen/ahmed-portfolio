@@ -1,0 +1,19 @@
+{
+  "name": "أحمد العدس — بورتفوليو",
+  "short_name": "أحمد العدس",
+  "description": "بورتفوليو أحمد العدس — مطوّر واجهات أمامية ومتخصّص في الأتمتة والذكاء الاصطناعي.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFDF5",
+  "theme_color": "#FFE600",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

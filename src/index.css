@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================== الأساس ===================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink font-body antialiased;
+    background-image: radial-gradient(#11111114 1.4px, transparent 1.4px);
+    background-size: 26px 26px;
+  }
+
+  ::selection {
+    background: #ffe600;
+    color: #111111;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  /* تحسين رؤية التركيز للوصولية (a11y) */
+  :focus-visible {
+    outline: 3px solid #2f6bff;
+    outline-offset: 3px;
+  }
+
+  /* احترام تفضيل تقليل الحركة */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ===================== مكوّنات Neo-brutalism ===================== */
+@layer components {
+  /* بطاقة بحدود سميكة وظل صلب */
+  .card-brutal {
+    @apply border-[3px] border-ink bg-cream shadow-brutal;
+  }
+
+  /* وسم/تاغ صغير */
+  .tag {
+    @apply inline-flex items-center gap-1 border-2 border-ink bg-cream px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide;
+  }
+
+  /* رابط داخلي بنمط بروتالي */
+  .link-brutal {
+    @apply border-b-[3px] border-ink font-semibold transition-colors hover:bg-yellow;
+  }
+
+  /* عنوان قسم */
+  .section-title {
+    @apply font-display text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl;
+  }
+}
+
+/* ===================== أدوات مساعدة ===================== */
+@layer utilities {
+  /* ظهور تدريجي عند التمرير (يُفعّل عبر hook useReveal) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+      transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* خط أرضية للنصوص المميّزة */
+  .underline-brutal {
+    background-image: linear-gradient(#ffe600, #ffe600);
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+    background-size: 100% 0.42em;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#FFFDF5"/>
+  <g fill="#11111110">
+    <circle cx="80" cy="80" r="4"/><circle cx="180" cy="80" r="4"/><circle cx="280" cy="80" r="4"/>
+    <circle cx="80" cy="180" r="4"/><circle cx="180" cy="180" r="4"/><circle cx="280" cy="180" r="4"/>
+  </g>
+  <rect x="60" y="60" width="1080" height="510" fill="none" stroke="#111111" stroke-width="8"/>
+  <rect x="100" y="110" width="260" height="64" fill="#FFE600" stroke="#111111" stroke-width="6"/>
+  <text x="120" y="155" font-family="IBM Plex Mono, monospace" font-size="34" font-weight="700" fill="#111111">PORTFOLIO</text>
+  <text x="100" y="320" font-family="Changa, Arial, sans-serif" font-size="120" font-weight="800" fill="#111111" direction="rtl">أحمد العدس</text>
+  <text x="100" y="400" font-family="Tajawal, Arial, sans-serif" font-size="40" font-weight="500" fill="#111111" direction="rtl">واجهات أمامية · أتمتة · ذكاء اصطناعي</text>
+  <rect x="100" y="450" width="60" height="60" fill="#FF5CA8" stroke="#111111" stroke-width="6"/>
+  <circle cx="220" cy="480" r="32" fill="#18E0C8" stroke="#111111" stroke-width="6"/>
+  <rect x="280" y="450" width="60" height="60" fill="#2F6BFF" stroke="#111111" stroke-width="6"/>
+</svg>

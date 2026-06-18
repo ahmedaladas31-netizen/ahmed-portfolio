@@ -1,0 +1,6 @@
+# robots.txt — أحمد العدس بورتفوليو
+User-agent: *
+Allow: /
+
+# خريطة الموقع
+Sitemap: https://www.ahmed-aladas.com/sitemap.xml
