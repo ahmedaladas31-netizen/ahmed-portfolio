@@ -5,6 +5,7 @@ import Button from '../components/Button'
 import Badge from '../components/Badge'
 import Reveal from '../components/Reveal'
 import ProjectCard from '../components/ProjectCard'
+import ImageStrip from '../components/ImageStrip'
 import NotFound from './NotFound'
 import { profile } from '../data/profile'
 import { projects, getProject, getRelated } from '../data/projects'
@@ -193,35 +194,6 @@ export default function ProjectDetail() {
         </div>
       </Section>
 
-      {/* لقطات من المشروع — معرض الصور الحقيقية مع نص بديل (alt) وصفي */}
-      {project.images?.length > 0 && (
-        <Section className="!pt-0">
-          <Reveal>
-            <span className="font-mono text-sm uppercase tracking-widest text-ink/60">
-              /// معرض
-            </span>
-            <h2 className="section-title mt-2">لقطات من المشروع 📸</h2>
-          </Reveal>
-          <div className="mt-9 grid gap-7 sm:grid-cols-2">
-            {project.images.map((img, i) => (
-              <Reveal key={img.src} delay={i * 90}>
-                <figure className="card-brutal overflow-hidden bg-cream">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    className="mx-auto max-h-[600px] w-full border-b-[3px] border-ink bg-ink/5 object-contain"
-                  />
-                  <figcaption className="p-4 font-mono text-xs leading-relaxed text-ink/70">
-                    {img.alt}
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-        </Section>
-      )}
-
       {/* حالة دراسية مفصّلة (اختيارية) */}
       {project.caseStudy && (
         <div className="border-t-[3px] border-ink bg-cream">
@@ -281,6 +253,21 @@ export default function ProjectDetail() {
             </div>
           </Section>
         </div>
+      )}
+
+      {/* لقطات من المشروع — شريط أفقي + lightbox (قبل قسم «شاهد أيضًا») */}
+      {project.images?.length > 0 && (
+        <Section className="border-t-[3px] border-ink">
+          <Reveal>
+            <span className="font-mono text-sm uppercase tracking-widest text-ink/60">
+              /// معرض
+            </span>
+            <h2 className="section-title mt-2">لقطات من المشروع 📸</h2>
+          </Reveal>
+          <Reveal className="-mx-5 mt-9 sm:-mx-8">
+            <ImageStrip images={project.images} />
+          </Reveal>
+        </Section>
       )}
 
       {/* مشاريع ذات صلة (روابط داخلية) */}
