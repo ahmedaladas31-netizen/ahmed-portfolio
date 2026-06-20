@@ -129,6 +129,38 @@ export default function ArticleDetail() {
         </div>
       </Section>
 
+      {/* المصادر */}
+      {article.sources?.length > 0 && (
+        <Section className="!pt-0">
+          <div className="max-w-2xl">
+            <Reveal>
+              <h2 className="font-display text-xl font-extrabold">
+                <span className="underline-brutal">المصادر</span>
+              </h2>
+              <ul className="mt-4 space-y-3">
+                {article.sources.map((src) => (
+                  <li key={src.url} className="flex gap-3 items-start leading-relaxed text-ink/85">
+                    <span
+                      className="mt-1 inline-block h-3 w-3 shrink-0 border-2 border-ink"
+                      style={{ backgroundColor: article.accent }}
+                      aria-hidden="true"
+                    />
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-ink break-all"
+                    >
+                      {src.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </Section>
+      )}
+
       {/* تنقّل: المقال التالي + كل المقالات */}
       <Section className="flex flex-col items-center justify-between gap-5 sm:flex-row">
         <Link to="/articles" className="border-b-[3px] border-ink font-display text-lg font-bold hover:bg-yellow">

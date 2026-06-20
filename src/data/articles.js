@@ -64,6 +64,16 @@ export const articles = [
         ],
       },
     ],
+    sources: [
+      {
+        label: 'JavaScript SEO Basics — Google Search Central',
+        url: 'https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics',
+      },
+      {
+        label: 'مقدمة البيانات المنظّمة (Structured Data) — Google Developers',
+        url: 'https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data',
+      },
+    ],
   },
 
   {
@@ -125,6 +135,16 @@ export const articles = [
         ],
       },
     ],
+    sources: [
+      {
+        label: 'توثيق n8n الرسمي — n8n Docs',
+        url: 'https://docs.n8n.io/',
+      },
+      {
+        label: 'WhatsApp Cloud API — Meta for Developers',
+        url: 'https://developers.facebook.com/docs/whatsapp/cloud-api/',
+      },
+    ],
   },
 
   {
@@ -175,6 +195,16 @@ export const articles = [
         paragraphs: [
           'الـ GEO مش بديل للـ SEO، هو امتداد له. أساسيات الـ Technical SEO لازمة، بس فوقها بتضيف: محتوى مباشر يجاوب أسئلة حقيقية، بيانات منظّمة، ومصداقية واضحة. هيك تجهّز موقعك لجيل البحث الجديد.',
         ],
+      },
+    ],
+    sources: [
+      {
+        label: 'AI Overviews — Google Search Central',
+        url: 'https://developers.google.com/search/docs/appearance/ai-overviews',
+      },
+      {
+        label: 'إنشاء محتوى مفيد وموثوق — Google Search Essentials',
+        url: 'https://developers.google.com/search/docs/fundamentals/creating-helpful-content',
       },
     ],
   },
